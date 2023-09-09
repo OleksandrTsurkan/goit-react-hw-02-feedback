@@ -1,25 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StatistUl, Statistli } from './Statictics.styled';
 
 const Statistics = ({ good, neutral, bad, total, percentage }) => {
   return (
-    <ul>
-      <li>
+    <StatistUl>
+      <Statistli>
         <p>good= {good}</p>
-      </li>
-      <li>
+      </Statistli>
+      <Statistli>
         <p>neutral= {neutral}</p>
-      </li>
-      <li>
+      </Statistli>
+      <Statistli>
         <p>bad= {bad}</p>
-      </li>
-      <li>
+      </Statistli>
+      <Statistli>
         <p>total= {total}</p>
-      </li>
-      <li>
+      </Statistli>
+      <Statistli>
         <p>positivePercentage= {percentage}%</p>
-      </li>
-    </ul>
+      </Statistli>
+    </StatistUl>
   );
 };
 
